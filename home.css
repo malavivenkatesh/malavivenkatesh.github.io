@@ -1,0 +1,314 @@
+/* Whole page */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    transition: background-color .5s;
+    background-color: #00368D;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+nav {
+    background-color: #00368D;
+    z-index: 10;
+    position: sticky;
+    top: 0;
+    text-align: center;
+}
+
+nav > a {
+    color: #f2f2f2;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 22px;
+    font-family: 'Permanent Marker', cursive;
+}
+
+nav > a:hover {
+    background-color: #f48b8b;
+    border-radius: 10px;
+}
+
+nav > a.active {
+    background-color: #f0815c;
+    color: white;
+    border-radius: 10px;
+}
+
+/* High-level sections */
+section {
+    position: relative;
+}
+
+section#home {
+    font-family: 'Ubuntu', sans-serif;
+    color: white;
+}
+
+.text-content {
+    padding: 0 2rem;
+    border: 5px solid #bb1133;
+    font-family: 'Hind Siliguri', sans-serif;
+    color: black;
+    background-color: white;
+}
+
+h2 {
+    font-family: 'Permanent Marker', cursive;
+}
+
+h3 {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+/* Home section */
+.banner {
+    padding-top: 4rem;
+    text-align: center;
+}
+
+.subheader {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 1rem;
+}
+
+.subheader > span {
+    margin: 0 1rem;
+}
+
+.subheader-enabling {
+    color: #ff3333;
+}
+
+.subheader-encouraging {
+    color: #FFA500;
+}
+
+.subheader-empowering {
+    color: #ffd24d;
+}
+
+.timeAndLocation {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.countdown {
+    display: inline-block;
+    position: relative;
+    background-color: #f9b311;
+    font-size: 2rem;
+    text-align: center;
+    border-radius: 20px;
+    
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 1rem 0;
+}
+
+#timer {
+    font-family: 'Hammersmith One', cursive;
+    padding: 10px;
+}
+
+.photos-parent {
+    text-align: center;
+}
+
+.photos {
+    width: 100%;
+    font-size: 1.5rem;
+}
+
+.photos-link {
+    color: red;
+}
+
+.pikachu {
+    position: absolute;
+    bottom: -10%;
+    right: 0;
+}
+
+.scroll-logo {
+    bottom: 0;
+    left: 0;
+}
+
+.bounce {
+    -moz-animation: bounce 3.5 infinite;
+    -webkit-animation: bounce 3.5s infinite;
+    animation: bounce 3.5s infinite;
+}
+
+@keyframes bounce {
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        transform: translateY(0);
+    }
+
+    60% {
+        transform: translateY(15px);
+    }
+}
+
+/* News section */
+#news {
+    text-align: center;
+}
+
+.timeline-container {
+    display: inline-block;
+}
+
+.timeline {
+    text-align: justify;
+}
+
+.door {
+    max-width: 90%;
+}
+
+/* Extra small devices (phones, 599px and down) */
+@media screen and (max-width: 599px) {
+    section {
+        margin: 0.5rem;
+    }
+
+    .banner > img {
+        max-width: 200px;
+    }
+
+    .pikachu {
+        max-width: 80px;
+    }
+
+    .scroll-logo {
+        position: relative;
+    }
+
+    .scroll-logo > img {
+        max-width: 50px;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media screen and (min-width: 600px) and (max-width: 767px) {
+    section {
+        margin: 1rem;
+    }
+
+    section#home {
+        margin-bottom: 80px;
+    }
+
+    .banner > img {
+        max-width: 350px;
+    }
+
+    .pikachu {
+        max-width: 100px;
+    }
+
+    .photos-parent {
+        display: flex;
+    }
+
+    .scroll-logo {
+        position: relative;
+    }
+
+    .scroll-logo > img {
+        max-width: 70px;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    section {
+        margin: 1.5rem;
+    }
+
+    .banner > img {
+        max-width: 400px;
+    }
+
+    .pikachu {
+        max-width: 150px;
+    }
+
+    .scroll-logo {
+        position: absolute;
+    }
+
+    .scroll-logo > img {
+        max-width: 80px;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+    section {
+        margin: 2rem;
+    }
+
+    .banner > img {
+        max-width: 500px;
+    }
+
+    .pikachu {
+        max-width: 200px;
+    }
+
+    .scroll-logo {
+        position: absolute;
+    }
+
+    .scroll-logo > img {
+        max-width: 100px;
+    }
+
+    .text-content {
+        font-size: 1.5rem;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media screen and (min-width: 1200px) {
+    section {
+        margin: 2rem;
+    }
+
+    .banner > img {
+        max-width: 500px;
+    }
+
+    .pikachu {
+        max-width: 300px;
+    }
+
+    .scroll-logo {
+        position: absolute;
+    }
+
+    .scroll-logo > img {
+        max-width: 100px;
+    }
+
+    .text-content {
+        font-size: 1.5rem;
+    }
+}
