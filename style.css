@@ -1,10 +1,11 @@
 body {
     background-color: #abffe2;
     margin: 2em;
+    font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;
 }
 
 h1 {
-    font-family: "Poiret+One";
+    font-family: "Poiret One";
     font-size: 100%;
     color: black;
 } 
