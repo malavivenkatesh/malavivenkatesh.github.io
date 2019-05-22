@@ -13,3 +13,29 @@ h1 {
 .main {
     height: 100vh;
 }
+
+a:link {
+    font-family: 'Press Start 2P', 'cursive';
+    font-size: 50%;
+    color: white;
+}
+
+a:visited{
+    font-family: 'Press Start 2P', 'cursive';
+    font-size: 50%;
+    color: white;
+}
+
+.button {
+    background-color: #17015e;
+    border: 2px solid white;
+    border-radius: 8px;
+    transition-duration: 5ms;
+    color: white;
+}
+
+.button:hover{
+    background-color: #2d37bd;
+    color: white;
+
+}
