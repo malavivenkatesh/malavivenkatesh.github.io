@@ -1,10 +1,10 @@
-body {
+.background {
     background-color: #17015e;
     margin: 2em;
     font-family: 'Encode Sans Semi Condensed', sans-serif;
 }
 
-h1 {
+.heading {
     font-family: 'Press Start 2P', cursive;
     font-size: 300%;
     color: white;
@@ -16,26 +16,27 @@ h1 {
 
 a:link {
     font-family: 'Press Start 2P', 'cursive';
-    font-size: 50%;
+    font-size: 100%;
     color: white;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+#bootstrap-override a:hover {
+    color: white;
+    background-color: #542dd4;
+    padding: 0.5em;
 }
 
 a:visited{
-    font-family: 'Press Start 2P', 'cursive';
-    font-size: 50%;
     color: white;
+    text-decoration: none;
+    background-color:transparent;
 }
 
-.button {
-    background-color: #17015e;
-    border: 2px solid white;
-    border-radius: 8px;
-    transition-duration: 5ms;
+.text {
     color: white;
-}
-
-.button:hover{
-    background-color: #2d37bd;
-    color: white;
-
+    text-align: center;
+    font-family: 'Source Code Pro', monospace;
+    align-content: center;
 }
