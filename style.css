@@ -8,7 +8,13 @@
     font-family: 'Press Start 2P', cursive;
     font-size: 300%;
     color: white;
-} 
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
 
 .main {
     height: 100vh;
@@ -26,6 +32,11 @@ a:link {
     color: white;
     background-color: #542dd4;
     padding: 0.5em;
+}
+
+#particles-js {
+    height : 100%;
+    background: #17015e;
 }
 
 a:visited{
