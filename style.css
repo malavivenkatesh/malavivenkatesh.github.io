@@ -1,13 +1,13 @@
 .background {
-    background-color: #17015e;
-    margin: 2em;
+    background-color: white;
+    margin: 0em;
     font-family: 'Encode Sans Semi Condensed', sans-serif;
 }
 
 .heading {
-    font-family: 'Press Start 2P', cursive;
-    font-size: 250%;
-    color: white;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 290%;
+    color: #00AB44;
 }
 
 body {
@@ -21,33 +21,38 @@ body {
 }
 
 a:link {
-    font-family: 'Press Start 2P', 'cursive';
-    font-size: 90%;
-    color: white;
+    font-family: 'Rajdhani', 'cursive';
+    font-size: 120%;
+    color: #00AB44;
     text-decoration: none;
     background-color: transparent;
 }
 
 #bootstrap-override a:hover {
     color: white;
-    background-color: #542dd4;
-    padding: 0.5em;
-}
-
-#particles-js {
-    height : 100%;
-    background: #17015e;
+    background-color: #00AB44;
+    padding: 1%;
+    border-radius: 7px;
 }
 
 a:visited{
-    color: white;
+    color: #00AB44;
     text-decoration: none;
     background-color:transparent;
 }
 
 .text {
-    color: white;
+    color: rgb(102, 109, 105);
     text-align: center;
     font-family: 'Source Code Pro', monospace;
-    align-content: center;
+    font-size: 80%;
+    font-weight: light;
+}
+
+.sub-heading {
+    color: #00AB44;
+    text-align: center;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 170%;
+    font-weight: semi-bold;
 }
