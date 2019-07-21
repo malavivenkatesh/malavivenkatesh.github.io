@@ -1,12 +1,12 @@
 .background {
     background-color: white;
-    margin: 0em;
+    margin: 1em;
     font-family: 'Encode Sans Semi Condensed', sans-serif;
 }
 
 .heading {
     font-family: 'Rajdhani', sans-serif;
-    font-size: 290%;
+    font-size: 300%;
     color: #00AB44;
 }
 
@@ -51,8 +51,35 @@ a:visited{
 
 .sub-heading {
     color: #00AB44;
-    text-align: center;
     font-family: 'Rajdhani', sans-serif;
     font-size: 170%;
     font-weight: semi-bold;
 }
+
+.title {
+    color: rgb(102, 109, 105);
+    font-family: 'Source Code Pro', 'monospace';
+    font-size: 90%;
+    font-weight: bold;
+    margin: 0px;
+}
+
+.description {
+    color: rgb(102, 109, 105);
+    text-align: left;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 80%;
+    font-weight: light;
+    margin: 0px;
+}
+
+#i {
+    background: #39b5e8;
+    width: 10px;
+    height: 10px;
+    position: fixed;
+    top: 50px;
+    left: 175px;
+    z-index: 2;
+  }
+  
