@@ -11,8 +11,7 @@
     <!-- import the webpage's stylesheet, fonts and Bootstrap's stylesheet -->
     <link rel="stylesheet" href="/style.css">
 
-    <link href="https://fonts.googleapis.com/css?family=Rajdhani:400,600|Source+Code+Pro:300&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Rajdhani|Source+Code+Pro&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
         integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
@@ -58,91 +57,25 @@
         </div>
 
         <div style="background-color: transparent">
-            <div class="row">
-
+            <div class="row section">
                 <div class="col-sm-12" style="text-align: left">
-                    <h3 class="sub-heading">Experience</h3>
-                    <div class="row">
-                        <div class="col-sm-12">
-                            <h6 class="title" style="text-align: left">Quorate Technology Intern<span
-                                    style="margin-left: 2em; font-weight: light">June 2019 - August 2019</span></h6>
-                            <p class="description">Working on a demo for the company's speech-to-text technology, making
-                                the text searchable using Elasticsearch and AWS Comprehend.</p>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-sm-12">
-                            <h6 class="title" style="text-align: left; font-weight: light">Goldman Sachs Spring
-                                Intern<span style="margin-left: 2em">April 2019</span></h6>
-                            <p class="description">Learned about the various teams within the Compliance Tech pipeline
-                                and presented a team project based around suggesting improvements to the pipleine and
-                                their use of Big Data.</p>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-sm-12">
-                            <h6 class="title" style="text-align: left; font-weight: light">Hack the Burgh V<span
-                                    style="margin-left: 2em">March 2019</span></h6>
-                            <p class="description"><b>Winner</b> of best use of Edinburgh Festivals API. </br> Worked in
-                                a team
-                                of 4 to build an app for finding shows during Edinburgh festivals using the Edinburgh
-                                Festivals API and Dart.</p>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-sm-12">
-                            <h6 class="title" style="text-align: left; font-weight: light">Amazon Spring Program<span
-                                    style="margin-left: 2em">April 2018</span></h6>
-                            <p class="description">Built an Alexa Skill game, which read lyrics of a song to the player
-                                and asked the player to complete them.</br> Worked in a team of 4, supervised by senior
-                                Amazon engineers.</p>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-sm-12">
-                            <h6 class="title" style="text-align: left; font-weight: light">Skyscanner Work
-                                Experience<span style="margin-left: 2em">October 2016</span></h6>
-                            <p class="description">Learned about how the Collaborative Tools team enhanced workflows and
-                                internal applications. </br>Built a web app that suggested holiday destinations for the
-                                user.</p>
-                            </p>
-                        </div>
-                    </div>
+                    <h3 class="sub-heading">Projects</h3>
+                    <div id="experience"></div>
                 </div>
             </div>
 
-            <div class="row">
+            <div class="row" style="padding: 0.5rem">
+            </div>
+
+            <div class="row section">
                 <div class="col-sm-12">
                     <h3 class="sub-heading" style="text-align: right">Skills</h3>
-                    <div class="row">
-                        <div class="col-sm-3">
-                            <h6 class="title">Languages:</h6>
-                        </div>
-                        <div class="col">
-                            <p class="description">Python</p>
-                        </div>
-                        <div class="col">
-                            <p class="description">Java</p>
-                        </div>
-                        <div class="col">
-                            <p class="description">Haskell</p>
-                        </div>
-                        <div class="col">
-                            <p class="description">CSS</p>
-                        </div>
-                        <div class="col">
-                            <p class="description">HTML</p>
-                        </div>
-                        <div class="col">
-                            <p class="description">C</p>
-                        </div>
+                    <div id="language" class=row>
                     </div>
                 </div>
             </div>
+
+
         </div>
 
 
@@ -158,6 +91,8 @@
         crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
         integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/3.0.1/mustache.min.js"
         crossorigin="anonymous"></script>
 
     <script type="text/javascript" src="/app.js"></script>

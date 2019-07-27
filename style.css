@@ -73,13 +73,14 @@ a:visited{
     margin: 0px;
 }
 
-#i {
-    background: #39b5e8;
-    width: 10px;
-    height: 10px;
-    position: fixed;
-    top: 50px;
-    left: 175px;
-    z-index: 2;
-  }
+.entry {
+    padding-bottom: 0.4rem;
+}
+
+.section {
+    border: 0.2rem outset #00AB44;
+    border-radius: 7px;
+    padding-bottom: 0.4rem;
+    padding-top: 0.4rem;
+}
   
