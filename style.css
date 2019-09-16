@@ -1,24 +1,47 @@
-.background {
-    background-color: white;
-    margin: 1em;
-    font-family: 'Encode Sans Semi Condensed', sans-serif;
-}
-
 .heading {
     font-family: 'Rajdhani', sans-serif;
-    font-size: 300%;
+    font-size:350%;
     color: #00AB44;
-}
-
-body {
+    text-align: center;
+    padding:0;
     margin: 0;
-    padding: 0;
-    height: 100vh;
 }
 
-.main {
-    height: 100vh;
+header {
+    background-color: #eee;
+    position: relative;
+    width:100%;
+    padding-bottom: 0.5rem;
 }
+
+footer {
+    background-color: #00AB44;
+}
+
+html, body {
+    height: 100%;
+    text-align: center;
+    font-family: 'Source Code Pro', monospace;
+    background-color: #eee;
+    margin:0;
+    padding:0;
+}
+
+section {
+    display:flex;
+    min-height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height:auto;
+    overflow:auto;
+    background-color: #00AB44;
+    color:#eee;
+    font-size: 120%;
+    padding-left: 7rem;
+    padding-right: 7rem;
+}
+
 
 a:link {
     font-family: 'Rajdhani', 'cursive';
@@ -26,12 +49,13 @@ a:link {
     color: #00AB44;
     text-decoration: none;
     background-color: transparent;
+    text-align: center;
 }
 
-#bootstrap-override a:hover {
+a.header-link:hover {
     color: white;
-    background-color: #00AB44;
-    padding: 1%;
+    background-color:#00AB44;
+    padding: 2px;
     border-radius: 7px;
 }
 
@@ -41,46 +65,109 @@ a:visited{
     background-color:transparent;
 }
 
-.text {
-    color: rgb(102, 109, 105);
-    text-align: center;
-    font-family: 'Source Code Pro', monospace;
-    font-size: 80%;
-    font-weight: light;
+ /* Style the button that is used to open and close the collapsible content */
+ .collapsible {
+    background-color: #201b22;
+    padding: 1rem;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 1rem;
+ }
+  
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.collapsible:hover {
+    background-color: #eee;
+    border-radius: 6px;
+}
+
+.active.collapsible {
+    background-color: #eee;
+    border-radius: 6px 6px 0 0;
+}
+
+  /* Style the collapsible content. Note: hidden by default */
+.collapsible-content {
+    padding: 0 1.5rem;
+    background-color: #eee;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
+
+.collapsible-content.active {
+    padding-bottom: 0.5rem;
+    border-radius: 0 0 6px 6px;
 }
 
 .sub-heading {
+    color: white;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 180%;
+    text-align: center;
+    padding-top: 0.5rem;
+    margin:0;
+}
+
+.sub-heading-alt {
     color: #00AB44;
     font-family: 'Rajdhani', sans-serif;
-    font-size: 170%;
-    font-weight: semi-bold;
+    font-size: 180%;
+    text-align: center;
+    padding-top: 0.5rem;
+    margin:0;
 }
 
 .title {
-    color: rgb(102, 109, 105);
+    color: #00AB44;
     font-family: 'Source Code Pro', 'monospace';
-    font-size: 90%;
+    font-size: 100%;
     font-weight: bold;
     margin: 0px;
+    text-align: center;
+}
+
+.title-alt {
+    color: white;
+    font-family: 'Source Code Pro', 'monospace';
+    font-size: 100%;
+    font-weight: bold;
+    margin: 0px;
+    text-align: center;
 }
 
 .description {
-    color: rgb(102, 109, 105);
+    color: white;
     text-align: left;
     font-family: 'Source Code Pro', monospace;
-    font-size: 80%;
-    font-weight: light;
+    font-size: 70%;
+    font-weight: lighter;
     margin: 0px;
 }
 
-.entry {
-    padding-bottom: 0.4rem;
+.description-alt {
+    color: #00AB44;
+    text-align: left;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 70%;
+    font-weight: lighter;
+    margin: 0px;
+
+}
+
+#experiences {
+    background-color: #201b22;
+}
+
+#education {
+    background-color: #201b22;
+    padding-bottom: 2rem;
 }
 
 .section {
-    border: 0.2rem outset #00AB44;
-    border-radius: 7px;
-    padding-bottom: 0.4rem;
-    padding-top: 0.4rem;
+    margin: 0;
+    padding-bottom: 1rem;
+    padding-top: 0;
+    padding-right: 0;
 }
-  

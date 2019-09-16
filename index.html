@@ -8,93 +8,94 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- import the webpage's stylesheet, fonts and Bootstrap's stylesheet -->
+    <!-- import the webpage's stylesheet and fonts-->
     <link rel="stylesheet" href="/style.css">
 
     <link href="https://fonts.googleapis.com/css?family=Rajdhani|Source+Code+Pro&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-
 </head>
 
-<body class="background">
-    <!--- links to GitHub, CV and email-->
-    <div class="container">
-        <div style=" text-align: center; background-color: transparent">
-            <div class="row">
-                <div class="col-sm-12">
-                    <h1 class="heading text-center">Malavika Venkatesh</h1>
-                </div>
-            </div>
+<body>
 
-            <div class="row">
-                <div class="col-sm-2"></div>
-                <div class="col-sm-2" id="bootstrap-override"><a href="https://github.com/malavivenkatesh"
-                        target="_blank">GitHub</a>
-                </div>
-                <div class="col-sm-2" id="bootstrap-override"><a href="https://linkedin.com">LinkedIn</a>
-                </div>
-                <div class="col-sm-2" id="bootstrap-override"><a href="mailto:malavivenkatesh@gmail.com">Email</a>
-                </div>
-                <div class="col-sm-2" id="bootstrap-override"><a
-                        href="https://drive.google.com/file/d/1jl0jmsXg6aK9R-e1zIbi5MmfQ0ifS-QE/view?usp=sharing">CV</a>
-                </div>
-                <div class="col-sm-2"></div>
+    <header>
+        <div id="top">
+            <h1 class="heading">Malavika Venkatesh</h1>
+        </div>
+        <div>
+            <a class="header-link" href="https://github.com/malavivenkatesh" target="_blank">GitHub</a>
+            <a class="header-link" href="https://linkedin.com" target="_blank">LinkedIn</a>
+            <a class="header-link" href="mailto:malavivenkatesh@gmail.com">Email</a>
+            <a class="header-link"
+                href="https://drive.google.com/file/d/1jl0jmsXg6aK9R-e1zIbi5MmfQ0ifS-QE/view?usp=sharing"
+                target="_blank">CV</a>
+        </div>
+    </header>
+
+    <section id="about">
+        <div>
+            <p>Hi, welcome to my website! I'm a third year Computer Science student studying at the University
+                of Edinburgh. </p>
+        </div>
+
+    </section>
+
+    <section id="experiences">
+        <h3 class="sub-heading-alt">Experience</h3>
+        <div id="experience" class="section"></div>
+
+    </section>
+
+    <section id="skills">
+        <h3 class="sub-heading">Skills</h3>
+        <div class="section">
+            <h3 class="title-alt">Languages</h3>
+            <div id="language"></div>
+        </div>
+
+        <div class="section">
+            <h3 class="title-alt">Frameworks</h3>
+            <div id="frameworks"></div>
+        </div>
+
+        <div class="section">
+            <h3 class="title-alt">Version Control</h3>
+            <div>
+                <p class="description" style="text-align:center">Git</p>
             </div>
         </div>
 
-
-        <div style="text-align: center; background-color: transparent">
-            <div style="text-align: center" class="row">
-                <div class="col-sm-12">
-                    <p style="padding: 0.5em 0px; margin: 0px" class="text">
-                        Hi, welcome to my website! I'm a second year Computer Science student studying at the University
-                        of Edinburgh.
-                    </p>
-                </div>
+        <div class="section">
+            <h3 class="title-alt">Cloud Computing</h3>
+            <div>
+                <p class="description" style="text-align:center">Amazon Web Services</p>
             </div>
         </div>
 
-        <div style="background-color: transparent">
-            <div class="row section">
-                <div class="col-sm-12" style="text-align: left">
-                    <h3 class="sub-heading">Projects</h3>
-                    <div id="experience"></div>
-                </div>
-            </div>
+    </section>
 
-            <div class="row" style="padding: 0.5rem">
-            </div>
-
-            <div class="row section">
-                <div class="col-sm-12">
-                    <h3 class="sub-heading" style="text-align: right">Skills</h3>
-                    <div id="language" class=row>
-                    </div>
-                </div>
-            </div>
-
-
+    <section id="education">
+        <h3 class="sub-heading-alt">Education</h3>
+        <div class="section">
+            <h3 class="title">University of Edinburgh, Sep 2017 - May 2021</h3>
+            <p class="description-alt" style="font-weight: bold">Key modules include:</p>
+            <div id="modules" style="text-align: left"></div>
         </div>
 
+    </section>
 
-    </div>
-    </div>
+    <footer>
+        <p class="description" style="text-align: center">© Malavika Venkatesh 2019</p>
+    </footer>
 
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!-- jQuery-->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-        crossorigin="anonymous"></script>
+    <!-- mustache -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/3.0.1/mustache.min.js"
         crossorigin="anonymous"></script>
 
+    <!-- source javascript -->
     <script type="text/javascript" src="/app.js"></script>
 
 </body>
