@@ -17,6 +17,21 @@
 
 <body>
 
+    <div id="sidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#top">Home</a>
+        <a href="#about">About</a>
+        <a href="#experiences">Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#education">Education</a>
+    </div>
+
+    <div class="nav-button" onclick=" openNav();">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </div>
+
     <header>
         <div id="top">
             <h1 class="heading">Malavika Venkatesh</h1>
@@ -41,6 +56,7 @@
 
     <section id="experiences">
         <h3 class="sub-heading-alt">Experience</h3>
+        <button id="expand-all" class="expand-all" onclick="expandAll(this)">Expand All</button>
         <div id="experience" class="section"></div>
 
     </section>
@@ -80,7 +96,6 @@
             <p class="description-alt" style="font-weight: bold">Key modules include:</p>
             <div id="modules" style="text-align: left"></div>
         </div>
-
     </section>
 
     <footer>

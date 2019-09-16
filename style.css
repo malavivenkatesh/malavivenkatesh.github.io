@@ -11,7 +11,7 @@ header {
     background-color: #eee;
     position: relative;
     width:100%;
-    padding-bottom: 0.5rem;
+    padding-bottom: 15px;
 }
 
 footer {
@@ -38,8 +38,8 @@ section {
     background-color: #00AB44;
     color:#eee;
     font-size: 120%;
-    padding-left: 7rem;
-    padding-right: 7rem;
+    padding-left: 70px;
+    padding-right: 70px;
 }
 
 
@@ -77,20 +77,20 @@ a:visited{
  }
   
   /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-.collapsible:hover {
+.collapsible:hover, .active.collapsible:hover{
     background-color: #eee;
     border-radius: 6px;
 }
 
 .active.collapsible {
-    background-color: #eee;
+    background-color: #201b22;
     border-radius: 6px 6px 0 0;
 }
 
   /* Style the collapsible content. Note: hidden by default */
 .collapsible-content {
     padding: 0 1.5rem;
-    background-color: #eee;
+    background-color: #201b22;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
@@ -170,4 +170,80 @@ a:visited{
     padding-bottom: 1rem;
     padding-top: 0;
     padding-right: 0;
+}
+
+
+/* The side navigation menu */
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #201b22; 
+    overflow-x: hidden; 
+    padding-top: 40px; 
+    transition: 0.5s;
+}
+  
+  /* The navigation menu links */
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #00AB44;
+    display: block;
+    transition: 0.3s;
+}
+  
+  /* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    color: #eee;
+}
+
+.nav-button {
+    position: fixed;
+    float: left;
+    text-align: left;
+    padding: 1rem;
+}
+  
+.bar {
+    width: 35px;
+    height: 4px;
+    background-color: #eee;
+    margin: 6px 0;
+    transition: 0.4s;
+    border-radius: 6px;
+}
+
+.expand-all {
+    background-color: transparent;
+    outline: none;
+    border: none;
+    text-align: center;
+    border-radius: 6px;
+    color: #00AB44;
+    font-weight: bold;
+    padding: 4px;
+    float: right;
+    cursor: pointer;
+    font-size: 60%;
+}
+
+@media screen and (max-width: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+    .bar {width:27px;}
+    .nav-button {padding:0.5rem;}
+    section {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
 }

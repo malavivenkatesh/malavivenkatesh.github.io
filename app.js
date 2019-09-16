@@ -101,7 +101,6 @@ var modules_text = Mustache.render(modules_template, mod);
 $("#modules").html(modules_text);
 
 function openCloseCollapse(coll) {
-    console.log(coll);
     coll.classList.toggle("active");
     var content = coll.nextElementSibling;
     content.classList.toggle("active");
@@ -111,3 +110,34 @@ function openCloseCollapse(coll) {
         content.style.maxHeight = content.scrollHeight + "px";
     }
 }
+
+function expandAll(button) {
+    var colls = document.getElementsByClassName("collapsible");
+    button.classList.toggle("active");
+    if (button.classList.contains("active")) {
+        button.innerHTML = "Close All";
+    } else {
+        button.innerHTML = "Expand All";
+    }
+
+    [].forEach.call(colls, function (el) {
+        openCloseCollapse(el);
+    });
+}
+
+
+/* Set the width of the side navigation to 250px */
+function openNav() {
+    var width = "250px";
+
+    if (window.innerWidth <= 800 && window.innerHeight <= 750) {
+        width = "200px";
+    }
+    document.getElementById("sidenav").style.width = width;
+}
+
+/* Set the width of the side navigation to 0 */
+function closeNav() {
+    document.getElementById("sidenav").style.width = "0";
+}
+
