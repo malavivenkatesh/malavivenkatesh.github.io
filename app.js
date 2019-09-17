@@ -91,7 +91,7 @@ var mod = {
 
 var modules_template =
     "{{#modules}}" +
-    "<div style=\"padding: 1% 1% 1% 15%\">" +
+    "<div style=\"padding: 1% 1% 1% 12%\">" +
     "<p class=\"description-alt\">{{module}}</p>" +
     "</div>" +
     "{{/modules}}";
@@ -114,6 +114,7 @@ function openCloseCollapse(coll) {
 function expandAll(button) {
     var colls = document.getElementsByClassName("collapsible");
     button.classList.toggle("active");
+    var expand = button.classList.contains("active");
     if (button.classList.contains("active")) {
         button.innerHTML = "Close All";
     } else {
@@ -121,7 +122,11 @@ function expandAll(button) {
     }
 
     [].forEach.call(colls, function (el) {
-        openCloseCollapse(el);
+        if (expand && !el.classList.contains("active")) {
+            openCloseCollapse(el);
+        } else if (!expand && el.classList.contains("active")) {
+            openCloseCollapse(el);
+        }
     });
 }
 
@@ -140,4 +145,3 @@ function openNav() {
 function closeNav() {
     document.getElementById("sidenav").style.width = "0";
 }
-
