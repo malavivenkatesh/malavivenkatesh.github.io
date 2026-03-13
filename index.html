@@ -1,126 +1,13 @@
-<!DOCTYPE html>
-
-<html>
-
-<head>
-    <title>Malavika Venkatesh</title>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- import the webpage's stylesheet and fonts-->
-    <link rel="stylesheet" href="style.css">
-
-    <link href="https://fonts.googleapis.com/css?family=Rajdhani|Source+Code+Pro&display=swap" rel="stylesheet">
-
-</head>
-
-<body>
-
-    <div id="sidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="#top">Home</a>
-        <a href="#about">About</a>
-        <a href="#experiences">Experience</a>
-        <a href="#skills">Skills</a>
-        <a href="#education">Education</a>
-    </div>
-
-    <div class="nav-button" onclick=" openNav();">
-        <div class="bar"></div>
-        <div class="bar"></div>
-        <div class="bar"></div>
-    </div>
-
-    <header>
-        <div id="top">
-            <h1 class="heading">Malavika Venkatesh</h1>
-        </div>
-        <div>
-            <a class="header-link" href="https://github.com/malavivenkatesh" target="_blank">GitHub</a>
-            <a class="header-link" href="https://linkedin.com/in/malavikavenkatesh" target=" _blank">LinkedIn</a>
-            <a class="header-link" href="mailto:malavivenkatesh@gmail.com">Email</a>
-            <a class="header-link"
-                href="https://drive.google.com/file/d/1CbAHiBJ6lcEaFp9gqWUXh1v-LETj8R2r/view?usp=sharing"
-                target="_blank">CV</a>
-        </div>
-    </header>
-
-    <section id="about">
-        <div>
-            <p>Hi, welcome to my website! I'm a fourth year Computer Science student studying at the University
-                of Edinburgh. </p>
-        </div>
-
-    </section>
-
-    <section id="experiences">
-        <h3 class="sub-heading-alt">Experience & Projects</h3>
-        <button id="expand-all" class="expand-all" onclick="expandAll(this)">Expand All</button>
-        <div id="experience" class="section"></div>
-
-    </section>
-
-    <section id="skills">
-        <h3 class="sub-heading">Skills</h3>
-        <div class="section">
-            <h3 class="title-alt">Languages</h3>
-            <div id="language"></div>
-        </div>
-
-        <div class="section">
-            <h3 class="title-alt">Frameworks</h3>
-            <div id="frameworks"></div>
-        </div>
-
-        <div class="section">
-            <h3 class="title-alt">Version Control</h3>
-            <div>
-                <p class="description" style="text-align:center">Git</p>
-            </div>
-        </div>
-
-        <div class="section">
-            <h3 class="title-alt">Cloud Computing</h3>
-            <div>
-                <p class="description" style="text-align:center">AWS</p>
-            </div>
-        </div>
-
-    </section>
-
-    <section id="education">
-        <h3 class="sub-heading-alt">Education</h3>
-        <div class="section">
-            <h3 class="title">University of Edinburgh, Sep 2017 - May 2021</h3>
-            <div style="padding: 10px 0 10px 0">
-                <p class="description-alt" style="text-align: center; font-weight: bold; font-size: 80%;">Women in
-                    Informatics Scholarship
-                    Winner</p>
-            </div>
-            <div style="padding-bottom: 10px;">
-                <p class="description-alt" style="font-weight: bold">Key modules include:</p>
-            </div>
-
-            <div id="modules" style="text-align: left"></div>
-        </div>
-    </section>
-
-    <footer>
-        <p class="description" style="text-align: center">© Malavika Venkatesh 2020</p>
-    </footer>
-
-    <!-- jQuery-->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <!-- mustache -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/3.0.1/mustache.min.js"
-        crossorigin="anonymous"></script>
-
-    <!-- source javascript -->
-    <script type="text/javascript" src="app.js"></script>
-
-</body>
-
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>malavi-react-website</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
 </html>
