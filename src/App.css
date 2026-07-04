@@ -73,7 +73,7 @@
 #next-steps {
   display: flex;
   border-top: 1px solid var(--border);
-  text-align: left;
+  text-align: center;
 
   & > div {
     flex: 1 1 0;
@@ -110,6 +110,7 @@
   display: flex;
   gap: 8px;
   margin: 32px 0 0;
+  justify-content: center;
 
   .logo {
     height: 18px;
